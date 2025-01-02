@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const user = JSON.parse(sessionStorage.getItem('loggedInUser'));
     if (!user) {
         alert('Please log in first');
-        window.location.href = 'login.html'; // Redirect to login if no user is logged in
+        window.location.href = 'index.html'; // Redirect to login if no user is logged in
         return;
     }
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Logout function to clear sessionStorage and redirect to login page
     function logout() {
         sessionStorage.removeItem('loggedInUser'); // Clear logged in user data from sessionStorage
-        window.location.href = 'login.html'; // Redirect to login page
+        window.location.href = 'index.html'; // Redirect to login page
     }
 
     // Add event listener to logout button

@@ -12,7 +12,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         if (user.password === password) {
             // Store user session data
             sessionStorage.setItem('loggedInUser', JSON.stringify(user));
-            window.location.href = 'index.html'; // Redirect to meal tracker page
+            window.location.href = 'main.html'; // Redirect to meal tracker page
         } else {
             alert('Incorrect password');
         }

@@ -11,6 +11,6 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
         const user = { username, password, meals: 0, totalCost: 0 };
         localStorage.setItem(username, JSON.stringify(user));
         alert('Registration successful! Please login.');
-        window.location.href = 'login.html'; // Redirect to login page
+        window.location.href = 'index.html'; // Redirect to login page
     }
 });
