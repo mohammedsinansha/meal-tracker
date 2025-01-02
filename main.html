@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meal Tracker</h1>
+        <div class="calendar">
+            <!-- Generate calendar dynamically -->
+        </div>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Total Meals: <span id="totalMeals">0</span></p>
+            <p>Cost Per Meal: ₹<span id="mealCost">60</span></p>
+            <p>Total Cost: ₹<span id="totalCost">0</span></p>
+        </div>
+
+        <div class="footer">
+           <!-- Reset Button -->
+           <button class="reset-btn">Reset Tracker</button>
+        </div>
+        <div class="footer">
+            <!-- Logout Button -->
+            <button class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

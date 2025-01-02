@@ -1,0 +1,154 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Calendar styles */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Day styling */
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff; /* Default background color is white */
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #ddd; /* Light border for clarity */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Day selected (meal purchased) */
+.day.selected {
+    background-color: #4caf50; /* Green for purchased meals */
+    color: white;
+}
+
+/* Day unselected (meal not purchased) */
+.day.unselected {
+    background-color: #f44336; /* Red for missed meals */
+    color: white;
+}
+
+/* Hover effect for calendar days */
+.day:hover {
+    background-color: #e0e0e0; /* Light grey on hover */
+    border: 1px solid #bbb;
+}
+
+/* Focus effect for accessibility */
+.day:focus {
+    outline: 3px solid #4caf50; /* Green outline for focused day */
+    outline-offset: 2px;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Summary section */
+.summary {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer section */
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98); /* Slight shrink effect when button is clicked */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+/* Form input group */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Link styling */
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
